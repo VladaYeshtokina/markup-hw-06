@@ -497,22 +497,50 @@
 
         <p class="modal-title">Leave your details, we will call you back</p>
 
-        <form name="order-service-data" class="modal-form">
-          <label for="name" class="modal-form-title">Name</label>
-          <input type="text" name="name" id="name">
-          
-          <label for="phone" class="modal-form-title">Phone</label>
-          <input type="tel" name="phone" id="phone">
-          
-          <label for="email" class="modal-form-title">E-mail</label>
-          <input type="email" name="email" id="email">
+        <form class="modal-form" autocomplete="off">
+           
+          <label class="modal-form-field">
+            <input type="text" class="modal-form-field-data" name="name" placeholder=" ">
+            <span class="modal-form-field-title">Name</span>
+            <svg class="modal-form-field-icon">
+              <use href="./img/icon-sprite.svg#form-person"></use>
+            </svg>
+          </label>
 
-          <p class="modal-form-title">Comment</p>          
-          <textarea name="comment" cols="30" rows="10" placeholder="Enter the text"></textarea>          
+          <label class="modal-form-field">
+            <input type="tel" class="modal-form-field-data" name="phone" placeholder=" ">
+            <span class="modal-form-field-title">Phone</span>
+            <svg class="modal-form-field-icon">
+              <use href="./img/icon-sprite.svg#form-phone"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-field">
+            <input type="email" class="modal-form-field-data" name="email" placeholder=" ">
+            <span class="modal-form-field-title">E-mail</span>
+            <svg class="modal-form-field-icon">
+              <use href="./img/icon-sprite.svg#form-mail"></use>
+            </svg>
+          </label>    
+
+          <label class="modal-form-field textarea">
+            <textarea name="comment" class="modal-form-field-data textarea-data" placeholder=" "></textarea>
+            <span class="modal-form-field-title textarea-title">Comment</span>            
+          </label>
+          
+          <label class="modal-form-checkbox">
+            <input type="checkbox" class="modal-form-checkbox-el visually-hidden">
+            <span class="modal-form-checkbox-icon"></span>
+            <span class="modal-form-checkbox-text">I agree with the mailing and accept</span>
+            <a href="" class="modal-form-checkbox-link">the Terms of the Agreement</a>           
+          </label>
+
+          <button type="submit" class="modal-form-button">Send</button>
+                    
         </form>
 
-        <input type="checkbox" id="mailing">
-        <label for="mailing">I agree with the mailing and accept <a href="">the Terms of the Agreement</a></label>
+        
+        
 
       </div>
     </div>
